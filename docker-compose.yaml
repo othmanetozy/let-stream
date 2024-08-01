@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: ms-postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      PGDATA: /var/lib/postgres/data
+    volumes:
+      - postgres:/var/lib/postgres/data
+    ports:
+      - 5544:5544
+    networks:
+      - microservice-net
+    restart: unless-stopped
+
+  pgadmin:
+    container_name: ms-pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-root@yopmail.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-root}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - 5454:80
+    networks:
+      - microservice-net
+    restart: unless-stopped
+
+  mongodb:
+    container_name: ms-mongo_db
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data
+    networks:
+      - microservice-net
+    restart: unless-stopped
+
+  mongo-express:
+    image: mongo-express
+    container_name: ms-mongo_express
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+    networks:
+      - microservice-net
+
+  mail-dev:
+    container_name: ms-mail_dev
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+    networks:
+      - microservice-net
+
+networks:
+  microservice-net:
+    driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:
+  mongo:
