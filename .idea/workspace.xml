@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d72bebb4-e9fa-40ff-b34a-3beab63b7304" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Controllers/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Dto/Adresse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Dto/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Exception/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Mapping/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/records/CustomerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/records/CustomerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Exception/ErrorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer-service/src/main/java/com/stream/customer/Exception/GlobalExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ConfigServerApplication.executor": "Debug",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.CustomerServiceApplication.executor": "Debug",
     "Spring Boot.DiscoveryApplication.executor": "Debug",
     "Spring Boot.DiscoveryServiceApplication.executor": "Debug",
@@ -90,8 +76,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.stream.customer.Controllers" />
       <recent name="com.stream.customer.Exception" />
+      <recent name="com.stream.customer.Controllers" />
       <recent name="com.stream.customer.Dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -165,7 +151,7 @@
       <workItem from="1722450941582" duration="4500000" />
       <workItem from="1722460074272" duration="2305000" />
       <workItem from="1722499990518" duration="117000" />
-      <workItem from="1722500146187" duration="13326000" />
+      <workItem from="1722500146187" duration="14707000" />
     </task>
     <servers />
   </component>
