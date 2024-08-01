@@ -6,23 +6,20 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class Product {
+
+public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Integer id;
     private String name;
-    private String descp;
-    private double availableQuantity;
-    private BigDecimal price;
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Category  category;
-
+    private String desc;
+    @OneToMany(mappedBy = "category" , cascade = CascadeType.REMOVE)
+    private List<Product> products;
 }

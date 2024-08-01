@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d72bebb4-e9fa-40ff-b34a-3beab63b7304" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/Product/src/main/java/com/stream/Product/Entity/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/Product/src/main/java/com/stream/Product/Entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/Product/src/main/java/com/stream/Product/Entity/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
 }]]></component>
@@ -83,6 +84,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.stream.Product.Entity" />
       <recent name="com.stream.customer.Exception" />
       <recent name="com.stream.customer.Controllers" />
       <recent name="com.stream.customer.Dto" />
@@ -165,7 +167,7 @@
       <workItem from="1722450941582" duration="4500000" />
       <workItem from="1722460074272" duration="2305000" />
       <workItem from="1722499990518" duration="117000" />
-      <workItem from="1722500146187" duration="17837000" />
+      <workItem from="1722500146187" duration="19641000" />
     </task>
     <servers />
   </component>
